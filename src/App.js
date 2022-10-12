@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="App" style={{marginBottom: "40px"}}>
-            <img style={{maxWidth: "300px", marginTop: "20px", marginBottom: "50px"}} src={logo} alt='vsn logo'/>
+            <img style={{maxWidth: "300px", marginTop: "50px", marginBottom: "50px"}} src={logo} alt='vsn logo'/>
     <WalletCardEthers/>
     <div className='Body'>
       <h2>
