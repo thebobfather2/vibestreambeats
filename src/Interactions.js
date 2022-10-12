@@ -27,7 +27,7 @@ const Interactions = (props) => {
 						<h4> How much would you like to tip? </h4>
 						<input type='number' id='sendAmount' min='0' step='1'/>
 
-						<button type='submit' className={styles.button6}>Send</button>
+						<button type='submit' className={styles.button6}>Tip</button>
 						<div>
 							{transferHash}
 						</div>

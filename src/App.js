@@ -8,10 +8,10 @@ function App() {
 
   return (
     <div className="App" style={{marginBottom: "40px"}}>
-            <img style={{maxWidth: "200px", marginTop: "20px"}} src={logo} alt='vsn logo'/>
+            <img style={{maxWidth: "300px", marginTop: "20px", marginBottom: "50px"}} src={logo} alt='vsn logo'/>
     <WalletCardEthers/>
     <div className='Body'>
-      <h2 style={{margin: "150px"}}>
+      <h2>
         Audio Player will go here
       </h2>
     </div>

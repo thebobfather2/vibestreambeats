@@ -1,37 +1,54 @@
 .walletCard {
-	text-align: left;
-	width: 50%;
+	text-align: center;
+	width: 90%;
 	margin: auto;
+	margin-bottom: 30px;
 	border-radius: 10px;
 	background-color: #A1C6EA;
 	box-shadow: 0.2em 0.2em 0 0.2em rgba(0,0,0,0.17);
 }
 
 .walletCard h3 {
-	margin-left:1em;
-	margin-bottom: 1em;
-	margin-top: 1em;
+	margin: auto;
+	justify-content: center;
+	align-items: baseline;
+	text-align: center;
 }
 
 .interactionsCard {
 	display: flex;
 	flex-direction: column;
-	width: 50%;
+	width: 90%;
 	margin: auto;
+	margin-bottom: 30px;
 	padding-bottom: 1em;
 	border-radius: 10px;
 	background-color: #507DBC;
 	box-shadow: 0.2em 0.2em 0 0.2em rgba(0,0,0,0.17);
 }
 
+.tipCard {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin: auto;
+	padding-bottom: 1em;
+	border: 5px solid black;
+	border-radius: 5px;
+	background-color: #d3a510;
+	box-shadow: 0.2em 0.2em 0 0.2em rgba(0,0,0,0.17);
+}
 .addressInput{
 	width: 75%;
 }
 
 .button6 {
+	max-width: 50%;
+	justify-content: center;
 	border: none;
 	padding: 0.7em 1.4em;
-	margin: 0 0.3em 0.3em 0.3em;
+	margin: auto;
+	margin-bottom: 30px;
 	border-radius:0.15em;
 	box-sizing: border-box;
 	text-decoration: none;

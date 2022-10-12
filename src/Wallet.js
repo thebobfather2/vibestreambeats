@@ -112,17 +112,17 @@ const Wallet = () => {
 	}
 	
 	return (
-	<div>
+	<div className={styles.tipCard}>
 			<h2> Connect Wallet Below To Tip! </h2>
 			<button className={styles.button6} onClick={connectWalletHandler}>{connButtonText}</button>
 
 			<div className={styles.walletCard}>
 			<div>
-				<h3>Address: {defaultAccount}</h3>
+				<h5>Address: {defaultAccount}</h5>
 			</div>
 
 			<div>
-				<h3>{tokenName} Balance: {balance}</h3>
+				<h5>{tokenName} Balance: {balance}</h5>
 			</div>
 
 			{errorMessage}
