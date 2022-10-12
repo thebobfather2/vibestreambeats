@@ -3,6 +3,7 @@ import './App.css';
 import WalletCard from './Pages/WalletCard';
 import WalletCardEthers from'./Pages/WalletCardEthers';
 import Wallet from './Wallet';
+import AudioPlayer from './Pages/AudioPlayer'
 
 function App() {
 
@@ -12,8 +13,11 @@ function App() {
     <WalletCardEthers/>
     <div className='Body'>
       <h2>
-        Audio Player will go here
+        Audio Player will go here!
       </h2>
+      <div className='App'>
+          <AudioPlayer />
+        </div>
     </div>
     <Wallet />
     </div>
