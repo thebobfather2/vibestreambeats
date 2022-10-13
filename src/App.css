@@ -1,4 +1,11 @@
-.App {
+.App{
+	min-height: 200vh;
+	min-width: 100%;
+	 background: #FDC830;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #F37335, #FDC830,#a83d08);  
+	background: linear-gradient(to right, #F37335, #FDC830,#ff6214); 
+	animation: gradient 10s ease infinite;
+	background-size: 400% 400%;
   text-align: center;
 }
 
@@ -8,10 +15,15 @@
 }
 
 .Body {
-  margin: 5rem;
-	border: 5px solid black;
-	border-radius: 5px;
+  margin: 2rem;
+	border: 10px solid black;
+	border-radius: 20px;
 	background-color: #e7dcb7;
+}
+
+.Box {
+  border: 20px solid black;
+	border-radius: 20px;
 }
 
 @media (prefers-reduced-motion: no-preference) {

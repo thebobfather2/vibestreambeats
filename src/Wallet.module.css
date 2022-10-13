@@ -3,7 +3,7 @@
 	width: 90%;
 	margin: auto;
 	margin-bottom: 30px;
-	border-radius: 10px;
+	border-radius: 20px;
 	background-color: #A1C6EA;
 	box-shadow: 0.2em 0.2em 0 0.2em rgba(0,0,0,0.17);
 }
@@ -22,7 +22,7 @@
 	margin: auto;
 	margin-bottom: 30px;
 	padding-bottom: 1em;
-	border-radius: 10px;
+	border-radius: 20px;
 	background-color: #507DBC;
 	box-shadow: 0.2em 0.2em 0 0.2em rgba(0,0,0,0.17);
 }
@@ -30,11 +30,10 @@
 .tipCard {
 	display: flex;
 	flex-direction: column;
-	width: 80%;
-	margin: auto;
+	margin: 2rem;
 	padding-bottom: 1em;
-	border: 5px solid black;
-	border-radius: 5px;
+	border: 10px solid black;
+	border-radius: 20px;
 	background-color: #d3a510;
 	box-shadow: 0.2em 0.2em 0 0.2em rgba(0,0,0,0.17);
 }

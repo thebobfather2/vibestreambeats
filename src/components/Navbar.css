@@ -1,208 +1,105 @@
-.nav {
-    width: 100%;
-    height: 90px;
-    padding-top: 20px;
-    background: black;
-    z-index: 10;
-}
-
-.navlogo {
-    float: left;
-    max-width: 150px;
-    margin-left: 20px;
-    align-self: center;
-}
-
-.close {
-    display: none !important;
-}
-
-a {
-    text-decoration: none;
-}
-
-.wallet-adapter-button-trigger {
-    background-color: black !important;
-    border: 2px solid rgb(255, 255, 255) !important;
-}
-
-.wallet-adapter-button-trigger:not([disable]) {
-    background-color: transparent !important;
-    height: 40px;
-}
-
-.wallet-adapter-button-trigger:not([disable]):hover {
-    background-color: orange !important;
-    border: 2px solid rgb(255, 255, 255) !important;
-}
-
-.wallet-adapter-modal-wrapper {
-    background-color: rgb(206, 137, 9) !important;
-}
-
-.list {
-    list-style-type: none;
-    background: transparent;
+.navbar {
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+    height: 80px;
     display: flex;
     justify-content: right;
     align-items: center;
-    position: relative;
-    margin-right: 40px;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-
-.listItem {
-    font-size: .9em;
-    margin-right: 20px;
-    font-family: 'Fredoka One', cursive;
-    color: rgb(255, 255, 255);
-    margin-bottom: 5px;
-    padding-top: 5px;
-}
-
-.listItem:hover {
-    color: rgb(255, 115, 0);
-    border-bottom: 4px solid rgb(255, 117, 3);
-}
-
-.items {
-    margin-right: 40px;
-    font-size: 20px;
-    text-transform: uppercase;
-    color: #f1f1f1;
+    font-size: 1.2rem;
+  }
+  
+  .navLogo {
+    max-width: 60px;
+    margin-right: 3%;
+  }
+  
+  .MELogo {
+    max-width: 75px;
+  }
+  
+  .navbar-logo {
+    color: #fff;
+    justify-self: start;
+    margin-left: 20px;
     cursor: pointer;
-}
-
-.btn1 {
+    text-decoration: none;
+    font-size: 2rem;
+  }
+  
+  .fa-firstdraft {
+    margin-left: 0rem;
+    font-size: 1.6rem;
+  }
+  
+  .nav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 2rem;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    height: 80px;
+  }
+  
+  .nav-links {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  .nav-links:hover {
+    background-color: #ff9318;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+  }
+  
+  .fa-bars {
+    color: #fff;
+  }
+  
+  .nav-links-mobile {
     display: none;
-    position: absolute;
-    right: 10px;
-    top: 7px;
-    padding: 0px;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-}
-
-.btn {
+  }
+  
+  .menu-icon {
     display: none;
-    position: absolute;
-    right: 20px;
-    top: 7px;
-    padding: 5px;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-}
-
-
-@media screen and (max-width: 1054px) {
-
+  }
+  .wallet-adapter-button-trigger {
+    margin-right: 10px !important;
+    font-size: 0.9rem !important;
+    min-width: 150px;
+    justify-content: center;
+  }
+  @media screen and (max-width: 1400px) {
     .wallet-adapter-button-trigger:not([disable]) {
-        background-color: transparent !important;
-        height: 40px;
-        font-size: .6em !important;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-
+      background-color: transparent !important;
+      height: 40px;
+      width: 180px;
+      font-size: 0.6em !important;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      justify-content: center;
     }
-}
-
-@media screen and (max-width: 900px) {
-    .navlogo{
-        display: none;
+  }
+  @media screen and (max-width: 1054px) {
+    .wallet-adapter-button-trigger:not([disable]) {
+      background-color: transparent !important;
+      height: 40px;
+      font-size: 1em !important;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: center;
     }
-   
-    
-}
-@media screen and (max-width: 755px) {
-    .nav {
-        z-index: 4;
-        padding-top: -20px;
-        color: white;
-        background: transparent !important;
+    .wallet-adapter-button-trigger {
+      padding-left: 10px !important;
     }
-nav{
-    background-color: black;
-}
-    .list {
-        flex-direction: column;
-        padding: 20px 0 !important;
-        width: 100%;
-        justify-content: center;
-        background-color: rgba(0, 0, 0, 0.788);
-        color: white;
-        position: absolute;
-        top: -20px;
-        z-index: 10;
-        text-align: center;
-    }
-
-    .items {
-        width: 100%;
-        text-align: center;
-        margin-right: auto;
-        padding: 20px 0;
-        background-color: rgba(0, 0, 0, 1);
-        color: white;
-        margin-left: auto;
-
-    }
-
-    .btn {
-        display: block;
-        border-radius: 20px;
-        color: rgb(255, 255, 255);
-        background-color: transparent;
-        border: none;
-    }
-
-    .navlogo {
-        float: none;
-        margin: auto;
-        display: none;
-
-    }
-
-    .navLogo2{
-        max-width: 175px;
-      }
-    
-      .MELogo{
-        max-width: 75px;
-      }
-      
-      .navbar-logo2 {
-        color: #fff;
-        justify-self: start;
-        margin-left: 0px;
-        cursor: pointer;
-        text-decoration: none;
-        font-size: 2rem;
-      }
-      
-    .navbar-logo {
-        color: #fff;
-        justify-self: start;
-        margin-left: 20px;
-        cursor: pointer;
-        text-decoration: none;
-        font-size: 2rem;
-      }
-      
-
-    .listItem {
-        color: white;
-        font-size: 1.5em;
-    }
-
-    .close {
-        color: white !important;
-        position: absolute;
-        top: -10px;
-        right: -80%;
-        display: block !important;
-        z-index: 11;
-    }
-
-}
+  }
+  
