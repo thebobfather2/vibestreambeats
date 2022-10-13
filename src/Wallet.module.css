@@ -24,7 +24,7 @@
 	padding-bottom: 1em;
 	border-radius: 20px;
 	background-color: #507DBC;
-	box-shadow: 0.2em 0.2em 0 0.2em rgba(0,0,0,0.17);
+	box-shadow: 0em 0em 0 0em rgba(0,0,0,0.17);
 }
 
 .tipCard {
@@ -34,7 +34,7 @@
 	padding-bottom: 1em;
 	border: 10px solid black;
 	border-radius: 20px;
-	background-color: #d3a510;
+	background: #507DBC;
 	box-shadow: 0.2em 0.2em 0 0.2em rgba(0,0,0,0.17);
 }
 .addressInput{

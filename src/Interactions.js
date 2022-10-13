@@ -1,6 +1,14 @@
 import {React, useState} from 'react'
 import styles from './Wallet.module.css';
 import vsn from './img/vsn.jpg';
+import { ethers } from 'ethers';
+
+//const provider =
+//    network === 'private'
+//      ? new ethers.providers.JsonRpcProvider('http://localhost:8545')
+//      : new ethers.getDefaultProvider(network)
+
+var provider = ethers.providers;
 
 const Interactions = (props) => {
 
@@ -8,13 +16,19 @@ const Interactions = (props) => {
 
 
 	const transferHandler = async (e) => {
-		e.preventDefault();
-		let transferAmount = e.target.sendAmount.value;
-		let recieverAddress = e.target.recieverAddress.value;
+        e.preventDefault();
+        let transferAmount = ethers.utils.parseEther(e.target.sendAmount.value); // The input form takes a normal value, but transactions need to be sent with the value parsed to wei (ie 1000000000000000000 instead of 1)
+        let recieverAddress = e.target.recieverAddress.value;
 
-		let txt = await props.contract.transfer(recieverAddress, transferAmount);
-		console.log(txt);
-		setTransferHash("Transfer confirmation hash: " + txt.hash);
+                const txData = {
+                  to: recieverAddress,
+                  value: transferAmount,
+                }
+
+              // Note - the signer/provider will need to be passed into this module somehow
+              const txt = await provider.sendTransaction(txData)
+          console.log(txt);
+          setTransferHash("Transfer confirmation hash: " + txt.hash);
 	}
 
 	return (

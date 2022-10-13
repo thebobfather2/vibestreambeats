@@ -5,6 +5,7 @@ import WalletCard from './Pages/WalletCard';
 import WalletCardEthers from'./Pages/WalletCardEthers';
 import Wallet from './Wallet';
 import Navbar from './components/Navbar';
+import audioplayer from './img/audioplayer.jpg'
 
 function App() {
 
@@ -26,9 +27,7 @@ function App() {
             <img style={{maxWidth: "300px", marginTop: "50px", marginBottom: "50px", borderRadius: "20px"}} src={logo} alt='vsn logo'/>
     <WalletCardEthers/>
     <div className='Body'>
-      <h2>
-        Audio Player will go here!
-      </h2>
+    <img className='AudioPlayer' src={audioplayer} alt='audio player'/>
     </div>
     <Wallet />
     </div>
