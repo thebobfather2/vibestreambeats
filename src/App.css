@@ -1,11 +1,10 @@
 .App{
 	min-height: 250vh;
 	min-width: 100%;
-	 background: #FDC830;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #F37335, #FDC830,#a83d08);  
-	background: linear-gradient(to right, #F37335, #FDC830,#ff6214); 
-	animation: gradient 10s ease infinite;
-	background-size: 400% 400%;
+  background-image: url('./img/Cyber_Moon.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
   text-align: center;
 }
 

@@ -9,18 +9,6 @@ import audioplayer from './img/audioplayer.jpg'
 
 function App() {
 
-    const [setScreenWidth] = useState(window.innerWidth);
-  
-    useEffect(() => {
-      const changeWidth = () => {
-        setScreenWidth(window.innerWidth);
-      };
-      window.addEventListener("resize", changeWidth);
-      return () => {
-        window.removeEventListener("resize", changeWidth);
-      };
-    }, []);
-
   return (
     <div className="App" style={{marginBottom: "0px"}}>
           <Navbar/>
