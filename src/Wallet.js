@@ -113,7 +113,7 @@ const Wallet = () => {
 	
 	return (
 	<div className={styles.tipCard}>
-			<h2> Connect Wallet Below To Tip! </h2>
+			<h1> TipBot </h1>
 			<button className={styles.button6} onClick={connectWalletHandler}>{connButtonText}</button>
 
 			<div className={styles.walletCard}>
